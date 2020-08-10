@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript"></script>
+
+<link href="quiz.css" rel="stylesheet">
+
+<meta charset="ISO-8859-1">
+<title>Quiz</title>
+</head>
+ <body>
+<h1>OnlineExam@Dxc</h1>
+<div id="quizContainer" class="container">
+<div class="title">Computer Quiz</div>
+<div id="question" class="question"></div>
+<label class="option"><input type="radio" name="option" value="1" /><span id="opt1"></span></label>
+<label class="option"><input type="radio" name="option" value="2" /><span id="opt2"></span></label>
+<label class="option"><input type="radio" name="option" value="3" /><span id="opt3"></span></label>
+<label class="option"><input type="radio" name="option" value="4" /><span id="opt4"></span></label>
+<button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
+<button id="previousButton" class="prv-btn" onclick="loadPreviousQuestion();">Previous Question</button>
+<button id="submit" class="submit" onclick="submitAnswer();">submit</button>
+</div>
+<div id="result" class="container result" style="display:none"></div>
+<script src="question.js"></script>
+<script src="quiz-script.js"></script>
+</body>
+</html>
